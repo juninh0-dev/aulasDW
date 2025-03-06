@@ -19,6 +19,21 @@
                 font-style: italic;
             }
 
+            .texto-verde{
+                color: green;
+            }
+
+            .texto-amararelo{
+                color: yellow;
+            }
+
+            .fundo-vermelho{
+                background: #f00;
+            }
+
+            .fundo-azul{
+                background-color: #00f;
+            }
         </style>
 
     </head>
@@ -40,6 +55,24 @@
         <p>
             Texto que era para ser negrito: <b>Olá CSS!</b>
         </p>
+            <b>
+                Também sou negrito!
+            </b> <br>
+            <!-- Para utlizar classes utilizamos a propriedade class -->
+            <b class="texto-amararelo fundo-vermelho">
+                Eu mudei utilizando classes!
+            </b> <br>
+            <b class="texto-verde fundo-vermelho">
+                Trocando novamente as cores
+            </b>
 
+            <p>No meio do texto <i class="texto-verde"> Tambem pode!</i>
+            </p>
+
+            <p class="texto-verde">
+                Bem vindo ao mundo do CSS
+                <b style="font-size: 25px;">Onde alteramos tudo!</b>
+
+            </p>
     </body>
 </html>
