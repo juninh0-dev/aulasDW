@@ -1,10 +1,10 @@
 :root{
     /* Tema Claro */
     --bg-color: #fff;
-    --text-color: #000;
-    --navbar-bg: #f8f9fa;
+    --text-color: #3b3b3b;
+    --navbar-bg: #f8f8f8;
     --card-bg: #f3ecec;
-    --footer-bg: #f8f9fa;
+    --footer-bg: #c0c0c073;
 
     /* Tema Ecuro */
     body.dark-mode{
