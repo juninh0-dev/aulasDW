@@ -40,32 +40,7 @@
             </div>
     </form>
 
-    <script>
-        const form = document.getElementById('formEndereco');
-
-        document.getElementsByTagName('h1')[0].addEventListener('mouseover', (event) => {
-            event.target.style.color = 'orange';
-        });
-
-        document.getElementsByTagName('h1')[0].addEventListener('mouseout', function(){
-            event.target.style.color = 'black';
-        });
-
-        document.getElementsById('nome').addEventListener('blur', function(){
-            if(this.value.trim() == ''){
-                this.style.backgroundColor ="#e8c5c7";
-                this.style.bordergroundColor ="#8b232b";
-            } else if(this.value.trim().length < 3){
-                this.style.backgroundColor = "#e8c5c7";
-                this.style.bordergroundColor = "#8b232b";
-                alert("O campo nome deve conter pelo menos 3 caracteres!")
-            } else {
-                this.style.backgroundColor = "#"
-            }
-
-            form.addEventListener('submit')
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
