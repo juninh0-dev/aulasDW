@@ -1,34 +1,65 @@
 .box{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 .louquinho{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     background: #ff12ff;
-    animation-name: correr;
-    animation-duration: 2s;
+    animation-name: loucura;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .easeout{
     animation: correr 2s ease-out;
     background: #0800ff;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 .easeinout{
     animation: correr 2s ease-in-out;
     background: #ff0000;
+    animation-iteration-count: infinite;
 }
 
 @keyframes correr{
     from{
-        transform: translateX(0);
+        transform: translateX(0) translateY(0);
     }
 
     to{
-        transform: translateX(900px);
+        transform: translateX(900px) translateY(300px);
     }
 
+}
+
+@keyframes loucura{
+    0%{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    25%{
+        position: relative;
+        top: 0px;
+        right: 900px;
+    }
+    
+    50%{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    100%{
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
 }
