@@ -1,0 +1,34 @@
+.box{
+    height: 300px;
+    width: 300px;
+}
+
+.louquinho{
+    height: 300px;
+    width: 300px;
+    background: #ff12ff;
+    animation-name: correr;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.easeout{
+    animation: correr 2s ease-out;
+    background: #0800ff;
+}
+
+.easeinout{
+    animation: correr 2s ease-in-out;
+    background: #ff0000;
+}
+
+@keyframes correr{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(900px);
+    }
+
+}
